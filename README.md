@@ -1,11 +1,11 @@
 # Backend API Documentation
 
-##### Introduction
+### Introduction
 The Router class provides a simple and efficient way to handle routing and dispatching HTTP requests in PHP applications. It allows you to define routes for different HTTP methods (GET, POST, PUT, DELETE) and map them to corresponding handlers.
 
 ---
 
-##### Usage
+### Usage
 
 1. Initializing Router:
     To use the Router, you first need to instantiate the Router class.
@@ -28,7 +28,7 @@ The Router class provides a simple and efficient way to handle routing and dispa
     After defining routes, you need to dispatch the incoming request to the appropriate handler using the `dispatch()` method.
     
     ---
-    ##### Route Handlers
+    ### Route Handlers
     Route handlers are callback functions responsible for processing incoming requests. Handlers are specified as strings in the format `Controller@method.` The Router resolves these strings to instantiate the corresponding controller class and call the specified method.
     
     Example:
@@ -38,14 +38,14 @@ The Router class provides a simple and efficient way to handle routing and dispa
     In this example, when a GET request is made to `/api/auth/login`, the `login` method of `AuthController` is called.
     
     ---
-    ##### Example: AuthController
+    ### Example: AuthController
     The AuthController class provides methods for user authentication such as registering and logging in users.
     
     - `register()`: Handles user registration by validating input data and inserting the user into the database.
     - `login()`: Handles user login by retrieving the user from the database and verifying the password.
     
     ---
-    ##### API Endpoints and API
+    ### API Endpoints and API
     API (Application Programming Interface) endpoints are specific URLs that the API exposes for interacting with the application. These endpoints represent different functionalities or resources provided by the API.
 
     In this documentation, the API endpoints are:
@@ -56,7 +56,7 @@ The Router class provides a simple and efficient way to handle routing and dispa
     These endpoints are prefixed with `/api` to denote that they are part of an API. APIs typically expose endpoints for performing CRUD (Create, Read, Update, Delete) operations on resources like users, products, etc.
     
     ---
-    ##### Response Format
+    ### Response Format
     All endpoints return responses in JSON format. This format ensures consistency and ease of parsing for client applications consuming the API. Responses contain relevant data or error messages, making it easy for client applications to handle success and failure cases.
     
     Example of JSON Response:
@@ -91,11 +91,11 @@ The Router class provides a simple and efficient way to handle routing and dispa
     ```
     
     ---
-    ##### .htaccess
+    ### .htaccess
     The `.htaccess` file is a configuration file used in Apache web servers to customize settings on a per-directory basis. It allows webmasters to override server configurations, manage URL rewriting for clean URLs, control access to directories or files, and define custom error pages. It's a powerful tool for enhancing website functionality and security. By understanding its capabilities and best practices, webmasters can effectively manage server configuration, improve SEO, and enhance website security.
     
     ---
-    ##### Security
+    ### Security
     The Router includes a `cors()` function to handle Cross-Origin Resource Sharing (CORS) headers. It ensures that requests from allowed origins are processed and appropriate headers are set.
     
     ---
