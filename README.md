@@ -23,7 +23,8 @@ The Router class provides a simple and efficient way to handle routing and dispa
     ```
     $router->get('/api/auth/login', 'AuthController@login');
     ```
-    3. Dispatching Requests:
+    
+3. Dispatching Requests:
     After defining routes, you need to dispatch the incoming request to the appropriate handler using the `dispatch()` method.
     
     ---
