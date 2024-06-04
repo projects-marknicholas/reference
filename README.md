@@ -1,6 +1,5 @@
 # Backend API Documentation
 
----
 ##### Introduction
 The Router class provides a simple and efficient way to handle routing and dispatching HTTP requests in PHP applications. It allows you to define routes for different HTTP methods (GET, POST, PUT, DELETE) and map them to corresponding handlers.
 
@@ -19,6 +18,7 @@ The Router class provides a simple and efficient way to handle routing and dispa
     - `post($path, $handler)`: Define a route for POST requests.
     - `put($path, $handler)`: Define a route for PUT requests.
     - `delete($path, $handler)`: Define a route for DELETE requests.
+   
     Example:
     ```
     $router->get('/api/auth/login', 'AuthController@login');
